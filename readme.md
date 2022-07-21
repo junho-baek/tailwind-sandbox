@@ -161,3 +161,70 @@ https://pyppkx.csb.app/tailwind-sandbox-done/index.html
   </body>
 </html>
 ```
+
+## 8. Working with Colors
+
+> 컬러 속성 클래스에 대해 알아보자
+
+```html
+<body>
+  <!-- Default colors -->
+  <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
+
+  <!-- Text Colors -->
+  <!-- 검정과 화이트는 shade 옵션 -200 이런거 줄 수 없다. -->
+  <p class="text-black">Tailwind is awesome</p>
+  <p class="text-white">Tailwind is awesome</p>
+  <!-- 일반적인 색상은 shade를 꼭 줘야한다. 50에서 900까지 줄 수 있다. -->
+  <p class="text-red-50">Tailwind is awesome</p>
+  <p class="text-red-900">Tailwind is awesome</p>
+  <p class="text-green-500">Tailwind is awesome</p>
+  <p class="text-emerald-500">Tailwind is awesome</p>
+  <p class="text-zinc-300">Tailwind is awesome</p>
+  <p class="text-slate-800">Tailwind is awesome</p>
+  <!-- Background Colors -->
+  <p class="bg-red-50">Tailwind is awesome</p>
+  <p class="bg-red-900">Tailwind is awesome</p>
+  <p class="bg-green-500">Tailwind is awesome</p>
+  <p class="bg-emerald-500">Tailwind is awesome</p>
+  <p class="bg-zinc-300">Tailwind is awesome</p>
+  <p class="bg-slate-800 text-white">Tailwind is awesome</p>
+  <!-- Text Underline -->
+  <p class="underline decoration-zinc-300">Tailwind is awesome</p>
+  <p class="underline decoration-red-300">Tailwind is awesome</p>
+  <p class="underline decoration-blue-300">Tailwind is awesome</p>
+  <!-- Border Colors -->
+  <input type="text" class="border border-blue-300" />
+  <input type="text" class="border border-orange-300" />
+  <input type="text" class="border border-green-300" />
+  <!-- Divide Colors -->
+  <div class="divide-y divide-blue-300">
+    <div>냐냐 1</div>
+    <div>냐냐 2</div>
+    <div>냐냐 3</div>
+    <div>냐냐 4</div>
+    <div>냐냐 5</div>
+  </div>
+  <!-- Outline Colors -->
+  <button class="outline outline-red-500">Hello</button>
+  <button class="outline outline-blue-500">Hello</button>
+  <button class="outline outline-green-500">Hello</button>
+  <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+  <button class="shadow-lg bg-cyan-500 shadow-cyan-500">subscribe</button>
+  <button
+    class="shadow-lg bg-red-300 shadow-red-500 underline decoration-zinc-300 text-emerald-500"
+  >
+    subscribe
+  </button>
+  <!-- 분수꼴은 opacity를 나타낸다. 100에 가까울 수록 불투명도가 높아진다. -->
+  <button class="shadow-lg bg-cyan-500 shadow-blue-500/50">subscribe</button>
+  <button class="shadow-lg bg-cyan-500 shadow-blue-500/90">subscribe</button>
+  <!-- Accent Colors -->
+  <input type="checkbox" class="accent-purple-500" checked />
+  <input type="checkbox" class="accent-blue-500" checked />
+  <!-- Arbitrary Colors -->
+  <div class="bg-[#427fab]">Hello</div>
+  <div class="bg-[rgba(255,0,0,0.2)]">Hello</div>
+  <div class="bg-[skyblue]">Hello</div>
+</body>
+```
