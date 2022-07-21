@@ -1,3 +1,18 @@
+- [Tailwind Sandbox](#tailwind-sandbox)
+- [tailwindcss-practice](#tailwindcss-practice)
+- [section 1: Introduction](#section-1--introduction)
+  - [1. Introduction](#1-introduction)
+  - [2. Course Outline & Project](#2-course-outline---project)
+  - [3. Project Links](#3-project-links)
+  - [4. What is Tailwind CSS?](#4-what-is-tailwind-css-)
+  - [5. Basic Environment Setup](#5-basic-environment-setup)
+  - [6. Tailwind Sandbox Setup](#6-tailwind-sandbox-setup)
+- [Section 2: Tailwind Fundamentals - Part 1](#section-2--tailwind-fundamentals---part-1)
+  - [7. Utility-First Example](#7-utility-first-example)
+  - [8. Working with Colors](#8-working-with-colors)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 # Tailwind Sandbox
 
 This is part of my Tailwind From Scratch course. The sandbox contains around 20 different folders/files that focus on specific aspects/classes of Tailwind.
