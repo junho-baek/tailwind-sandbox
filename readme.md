@@ -1611,3 +1611,416 @@ https://pyppkx.csb.app/tailwind-sandbox-done/index.html
       float-none	  float: none;
     -->
 ```
+
+## 13.Background & Shadows
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Backgrounds & Shadows</title>
+  </head>
+  <body class="pb-40">
+    <!-- Background Classes -->
+    <div
+      class="h-64 w-72 bg-no-repeat bg-cover bg-center"
+      style="background-image: url('../assets/img/img1.jpg');"
+    ></div>
+    <!-- Gradients -->
+    <div class="h-24 bg-gradient-to-r from-green-300 to-red-700"></div>
+    <!-- Shadows -->
+    <div class="w-96 mt-6 ml-4 p-3 shadow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      minima a veritatis? Nam, cum doloribus nulla sint quis culpa consequatur
+      exercitationem blanditiis mollitia expedita error ipsa debitis officiis
+      obcaecati optio!
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-md">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      minima a veritatis? Nam, cum doloribus nulla sint quis culpa consequatur
+      exercitationem blanditiis mollitia expedita error ipsa debitis officiis
+      obcaecati optio!
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-lg">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      minima a veritatis? Nam, cum doloribus nulla sint quis culpa consequatur
+      exercitationem blanditiis mollitia expedita error ipsa debitis officiis
+      obcaecati optio!
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-xl">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      minima a veritatis? Nam, cum doloribus nulla sint quis culpa consequatur
+      exercitationem blanditiis mollitia expedita error ipsa debitis officiis
+      obcaecati optio!
+    </div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-2xl shadow-blue-300">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      minima a veritatis? Nam, cum doloribus nulla sint quis culpa consequatur
+      exercitationem blanditiis mollitia expedita error ipsa debitis officiis
+      obcaecati optio!
+    </div>
+
+    <div class="w-96 mt-6 ml-4 p-3 shadow-2xl shadow-blue-300 shadow-inner">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      minima a veritatis? Nam, cum doloribus nulla sint quis culpa consequatur
+      exercitationem blanditiis mollitia expedita error ipsa debitis officiis
+      obcaecati optio!
+    </div>
+
+    <div class="w-96 mt-6 ml-4 p-3 shadow-2xl shadow-red-300/80 shadow-inner">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      minima a veritatis? Nam, cum doloribus nulla sint quis culpa consequatur
+      exercitationem blanditiis mollitia expedita error ipsa debitis officiis
+      obcaecati optio!
+    </div>
+    <!-- Mix Blend -->
+    <div class="flex justify-center -space-x-24">
+      <div class="mix-blend-multiply bg-blue-400">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+        asperiores architecto officia! Laudantium nobis commodi numquam ipsum
+        nulla accusamus architecto!
+      </div>
+      <div class="mix-blend-multiply bg-pink-400">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sequi
+        modi nobis dolorem consequatur provident itaque maxime sed inventore
+        voluptatum!
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Background Size
+  bg-auto	    background-size: auto;
+  bg-cover	  background-size: cover;
+  bg-contain	background-size: contain;
+-->
+
+<!-- Background Repeat
+  bg-repeat	      background-repeat: repeat;
+  bg-no-repeat	  background-repeat: no-repeat;
+  bg-repeat-x	    background-repeat: repeat-x;
+  bg-repeat-y	    background-repeat: repeat-y;
+  bg-repeat-round	background-repeat: round;
+  bg-repeat-space	background-repeat: space;
+-->
+
+<!-- Background Position
+  bg-bottom	      background-position: bottom;
+  bg-center	      background-position: center;
+  bg-left	        background-position: left;
+  bg-left-bottom	background-position: left bottom;
+  bg-left-top	    background-position: left top;
+  bg-right	      background-position: right;
+  bg-right-bottom	background-position: right bottom;
+  bg-right-top	  background-position: right top;
+  bg-top	        background-position: top;
+-->
+
+<!-- Background Attachment
+  bg-fixed	  background-attachment: fixed;
+  bg-local	  background-attachment: local;
+  bg-scroll	  background-attachment: scroll;
+-->
+
+<!-- 
+  Shadows
+  shadow-sm	    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  shadow	      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  shadow-md	    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  shadow-lg	    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  shadow-xl	    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  shadow-2xl	  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  shadow-inner	box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  shadow-none	  box-shadow: 0 0 #0000;
+ -->
+```
+
+## 14.Border & Border Radius
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Borders</title>
+  </head>
+  <body>
+    <!-- Border Width & Colors -->
+    <div class="w-96 m-3 p-5 border">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+
+    <div class="w-96 m-3 p-5 border-2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+
+    <div class="w-96 m-3 p-5 border-4">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+
+    <div class="w-96 m-3 p-5 border-8 border-blue-300/50">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+    <div class="w-96 m-3 p-5 border-x-4">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+    <div class="w-96 m-3 p-5 border-y-4">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+    <div class="w-96 m-3 p-5 border-t-4">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+    <div class="w-96 m-3 p-5 border-b-4">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+    <div class="w-96 m-3 p-5 border-r-4">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+
+    <div class="w-96 m-3 p-5 border-l-4">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+
+    <!-- Border Radius -->
+
+    <div class="w-96 m-3 p-5 border-4 rounded">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+    <div class="w-96 m-3 p-5 border-4 rounded-lg">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+
+    <div class="w-96 m-3 p-5 border-4 rounded-xl">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+    <div class="w-96 m-3 p-5 border-4 rounded-2xl">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+    <div class="w-96 m-3 p-5 border-4 rounded-full">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+    <div class="w-96 m-3 p-5 border-4 rounded-t-full">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam
+      perferendis doloremque ratione deserunt maxime minus quidem aliquid
+      molestiae quae!
+    </div>
+
+    <!-- Outline -->
+    <button class="outline m-12 outline-4 outline-offset-2 outline-red-500">
+      click!
+    </button>
+  </body>
+</html>
+
+<!-- Border Widths
+      border-0	    border-width: 0px;
+      border-2	    border-width: 2px;
+      border-4	    border-width: 4px;
+      border-8	    border-width: 8px;
+      border	      border-width: 1px;
+      border-x-0	  border-left-width: 0px;
+                    border-right-width: 0px;
+      border-x-2	  border-left-width: 2px;
+                    border-right-width: 2px;
+      border-x-4    border-left-width: 4px;
+                    border-right-width: 4px;
+      border-x-8	  border-left-width: 8px;
+                    border-right-width: 8px;
+      border-x	    border-left-width: 1px;
+                    border-right-width: 1px;
+      border-y-0  	border-top-width: 0px;
+                    border-bottom-width: 0px;
+      border-y-2	  border-top-width: 2px;
+                    border-bottom-width: 2px;
+      border-y-4	  border-top-width: 4px;
+                    border-bottom-width: 4px;
+      border-y-8	  border-top-width: 8px;
+                    border-bottom-width: 8px;
+      border-y	    border-top-width: 1px;
+                    border-bottom-width: 1px;
+      border-t-0	  border-top-width: 0px;
+      border-t-2	  border-top-width: 2px;
+      border-t-4	  border-top-width: 4px;
+      border-t-8	  border-top-width: 8px;
+      border-t	    border-top-width: 1px;
+      border-r-0	  border-right-width: 0px;
+      border-r-2	  border-right-width: 2px;
+      border-r-4	  border-right-width: 4px;
+      border-r-8	  border-right-width: 8px;
+      border-r	    border-right-width: 1px;
+      border-b-0	  border-bottom-width: 0px;
+      border-b-2	  border-bottom-width: 2px;
+      border-b-4	  border-bottom-width: 4px;
+      border-b-8	  border-bottom-width: 8px;
+      border-b	    border-bottom-width: 1px;
+      border-l-0	  border-left-width: 0px;
+      border-l-2	  border-left-width: 2px;
+      border-l-4	  border-left-width: 4px;
+      border-l-8	  border-left-width: 8px;
+      border-l	    border-left-width: 1px;
+    -->
+
+<!-- Border Radius
+      rounded-none	    border-radius: 0px;
+      rounded-sm	      border-radius: 0.125rem; /* 2px */
+      rounded	          border-radius: 0.25rem; /* 4px */
+      rounded-md	      border-radius: 0.375rem; /* 6px */
+      rounded-lg	      border-radius: 0.5rem; /* 8px */
+      rounded-xl	      border-radius: 0.75rem; /* 12px */
+      rounded-2xl	      border-radius: 1rem; /* 16px */
+      rounded-3xl	      border-radius: 1.5rem; /* 24px */
+      rounded-full	    border-radius: 9999px;
+     -->
+
+<!-- Outline
+      outline-0	outline-width: 0px;
+      outline-1	outline-width: 1px;
+      outline-2	outline-width: 2px;
+      outline-4	outline-width: 4px;
+      outline-8	outline-width: 8px;
+  -->
+```
+
+## 15.Filters
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Filters</title>
+  </head>
+  <body>
+    <!-- Blur -->
+    <div class="blur-sm">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque
+      perferendis commodi doloremque magnam distinctio voluptate porro
+      voluptates nostrum quis.
+    </div>
+    <div class="blur">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque
+      perferendis commodi doloremque magnam distinctio voluptate porro
+      voluptates nostrum quis.
+    </div>
+    <div class="blur-lg">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque
+      perferendis commodi doloremque magnam distinctio voluptate porro
+      voluptates nostrum quis.
+    </div>
+    <div class="blur-xl">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque
+      perferendis commodi doloremque magnam distinctio voluptate porro
+      voluptates nostrum quis.
+    </div>
+    <img src="../assets/img/img1.jpg" alt="" class="blur-sm" />
+
+    <!-- Brightness -->
+    <img src="../assets/img/img1.jpg" alt="" class="brightness-50" />
+    <img src="../assets/img/img1.jpg" alt="" class="brightness-75" />
+    <img src="../assets/img/img1.jpg" alt="" class="brightness-110" />
+    <img src="../assets/img/img1.jpg" alt="" class="brightness-125" />
+    <img src="../assets/img/img1.jpg" alt="" class="brightness-200" />
+    <!-- Contrast -->
+    <img src="../assets/img/img3.jpg" alt="" class="contrast-0" />
+    <img src="../assets/img/img3.jpg" alt="" class="contrast-50" />
+    <img src="../assets/img/img3.jpg" alt="" class="contrast-100" />
+    <img src="../assets/img/img3.jpg" alt="" class="contrast-150" />
+    <img src="../assets/img/img3.jpg" alt="" class="contrast-200" />
+    <!-- Grayscale -->
+    <img src="../assets/img/img3.jpg" alt="" class="grayscale" />
+    <!-- Invert -->
+    <img src="../assets/img/img3.jpg" alt="" class="invert" />
+    <!-- Sepia -->
+    <img src="../assets/img/img3.jpg" alt="" class="sepia" />
+    <!-- Hue Rotate -->
+    <img src="../assets/img/img3.jpg" alt="" class="hue-rotate-15" />
+    <img src="../assets/img/img3.jpg" alt="" class="hue-rotate-60" />
+    <img src="../assets/img/img3.jpg" alt="" class="hue-rotate-90" />
+    <img src="../assets/img/img3.jpg" alt="" class="hue-rotate-180" />
+  </body>
+</html>
+
+<!-- Blur
+  blur-none	    filter: blur(0);
+  blur-sm	      filter: blur(4px);
+  blur	        filter: blur(8px);
+  blur-md	      filter: blur(12px);
+  blur-lg	      filter: blur(16px);
+  blur-xl	      filter: blur(24px);
+  blur-2xl	    filter: blur(40px);
+  blur-3xl	    filter: blur(64px);
+-->
+
+<!-- Brightness
+  brightness-0	    filter: brightness(0);
+  brightness-50	    filter: brightness(.5);
+  brightness-75	    filter: brightness(.75);
+  brightness-90	    filter: brightness(.9);
+  brightness-95	    filter: brightness(.95);
+  brightness-100	  filter: brightness(1);
+  brightness-105	  filter: brightness(1.05);
+  brightness-110	  filter: brightness(1.1);
+  brightness-125	  filter: brightness(1.25);
+  brightness-150	  filter: brightness(1.5);
+  brightness-200	  filter: brightness(2);
+-->
+
+<!-- Contrast
+  contrast-0	  filter: contrast(0);
+  contrast-50	  filter: contrast(.5);
+  contrast-75	  filter: contrast(.75);
+  contrast-100	filter: contrast(1);
+  contrast-125	filter: contrast(1.25);
+  contrast-150	filter: contrast(1.5);
+  contrast-200	filter: contrast(2);
+-->
+
+<!-- Hue Rotate
+  hue-rotate-0	    filter: hue-rotate(0deg);
+  hue-rotate-15	    filter: hue-rotate(15deg);
+  hue-rotate-30	    filter: hue-rotate(30deg);
+  hue-rotate-60	    filter: hue-rotate(60deg);
+  hue-rotate-90	    filter: hue-rotate(90deg);
+  hue-rotate-180	  filter: hue-rotate(180deg);
+-->
+```
