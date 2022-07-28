@@ -8,15 +8,53 @@
     <title>Flex</title>
   </head>
   <body>
+    <!-- flex-col md:flex-row 반응형 만들때 이렇게 많이 함 -->
+    <!-- 기본은 items-stretch라서 아이템들이 쭉쭉 늘어나 있는 느낌이 날 수 있음 -->
+    <!-- justify-between 시작과 끝 지점 공백 없이 어라운드 하는거 -->
     <!-- Flex and alignment -->
+    <div
+      class="flex flex-wrap h-72 w-full bg-gray-100 items-center justify-between"
+    >
+      <div class="p-10 border border-blue-300 bg-blue-100">01</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">02</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">03</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">04</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">04</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">04</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">04</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">04</div>
+    </div>
 
     <!-- Flex Column, Gap and Order -->
-
+    <div
+      class="flex flex-col gap-4 overflow-scroll h-72 w-full bg-gray-100 items-center justify-between"
+    >
+      <div class="order-3 p-10 border border-blue-300 bg-blue-100">01</div>
+      <div class="order-2 p-10 border border-blue-300 bg-blue-100">02</div>
+      <div class="order-4 p-10 border border-blue-300 bg-blue-100">03</div>
+      <div class="order-1 p-10 border border-blue-300 bg-blue-100">04</div>
+    </div>
     <!-- Grow and shrink -->
-  </body>
-</html>
-
-<!-- Justify Content
+    <div class="flex w-full bg-gray-100">
+      <div class="flex-none p-10 w-64 border border-blue-300 bg-blue-100">
+        01
+      </div>
+      <div class="p-10 flex-initial w-64 border border-blue-300 bg-blue-100">
+        02
+      </div>
+      <div class="p-10 flex-none w-64 border border-blue-300 bg-blue-100">
+        03
+      </div>
+      <div class="p-10 flex-auto w-64 border border-blue-300 bg-blue-100">
+        04
+      </div>
+      <div class="p-10 border border-blue-300 bg-blue-100">05</div>
+      <div class="flex-initial p-10 border border-blue-300 bg-blue-100">06</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">07</div>
+      <div class="p-10 border border-blue-300 bg-blue-100">08</div>
+    </div>
+    <!-- 휴.. -->
+    <!-- Justify Content
       justify-start	      justify-content: flex-start;
       justify-end	        justify-content: flex-end;
       justify-center	    justify-content: center;
@@ -25,28 +63,20 @@
       justify-evenly	    justify-content: space-evenly;
     -->
 
-<!-- 
-      items-start	align-items: flex-start;
-      items-end	align-items: flex-end;
-      items-center	align-items: center;
-      items-baseline	align-items: baseline;
-      items-stretch	align-items: stretch;
-     -->
-
-<!-- Flex Direction
+    <!-- Flex Direction
       flex-row	        flex-direction: row;
       flex-row-reverse	flex-direction: row-reverse;
       flex-col	        flex-direction: column;
       flex-col-reverse	flex-direction: column-reverse;
     -->
 
-<!-- 
+    <!-- 
       flex-wrap	        flex-wrap: wrap;
       flex-wrap-reverse	flex-wrap: wrap-reverse;
       flex-nowrap	      flex-wrap: nowrap;
      -->
 
-<!-- Flex Properties
+    <!-- Flex Properties
       flex-none	    flex: none;     
       Prevent item from growing or shrinking
 
@@ -59,3 +89,5 @@
       flex-1	      flex: 1 1 0%;   
       Allow item to grow and shrink as needed, ignoring its initial size
     -->
+  </body>
+</html>

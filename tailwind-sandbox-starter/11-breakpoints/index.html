@@ -8,7 +8,23 @@
     <title>Breakpoints & Media Queries</title>
   </head>
   <!-- Tailwind is mobile-first -->
-  <body></body>
+  <!-- 모바일버전을 먼저 스타일하고, 웹 버전을 나중에 스타일하는 것이다 -->
+  <body
+    class="bg-black sm:bg-green-900 md:bg-red-900 lg:bg-sky-900 xl:bg-teal-900 2xl:bg-purple-900"
+  >
+    <h1 class="text-white text-4xl md:text-5xl"></h1>
+
+    <script>
+      function showBrowserWidth() {
+        const width = window.innerWidth;
+        document.querySelector("h1").innerText = `Width: ${width}px`;
+      }
+      showBrowserWidth();
+      // setInterval(showBrowserWidth, 0);
+      window.onload = showBrowserWidth;
+      window.onresize = showBrowserWidth;
+    </script>
+  </body>
 </html>
 
 <!-- Breakpoint Classes
